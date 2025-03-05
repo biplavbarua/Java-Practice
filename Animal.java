@@ -1,4 +1,4 @@
-//How to use Multi Inheritance in Java
+//How to use Single Inheritance in Java
 public class Animal {
     void eat() {
         System.out.println("eating...");
