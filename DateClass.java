@@ -6,8 +6,9 @@ class DateClass {
         LocalDate date = LocalDate.now();
         System.out.println("Current Date: " + date);
 
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        String formattedDate = date.format(formatter);
-        System.out.println("Formatted Date: " + formattedDate);
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        System.out.println(LocalDate.now().format(formatter));
+        LocalDate parsedDate = LocalDate.parse("2025-01-01", formatter);
+        System.out.println("Parsed Date: " + parsedDate);
     }
 }
