@@ -1,10 +1,8 @@
-import java.util.Date;
-import java.util.Calendar;
-public class DateClass {
+import java.time.LocalDate;
+
+class DateClass {
     public static void main(String[] args) {
-        Calendar calendar = Calendar.getInstance();
-        calendar.add(Calendar.DATE, 0);
-        Date futureDate = calendar.getTime();
-        System.out.println(futureDate);
+        LocalDate today = LocalDate.now();
+        System.out.println(today);
     }
 }
