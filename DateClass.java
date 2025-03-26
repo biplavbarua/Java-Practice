@@ -1,8 +1,11 @@
-import java.time.LocalTime;
+import java.time.LocalDateTime;
+import java.time.ZonedDateTime;
 
 class DateClass {
     public static void main(String[] args) {
-        LocalTime timenow = LocalTime.now();
-        System.out.println(timenow);
+        LocalDateTime abc = LocalDateTime.now();
+        System.out.println(abc);
+        ZonedDateTime zdt = ZonedDateTime.now();
+        System.out.println(zdt);
     }
 }
