@@ -1,8 +1,8 @@
-import java.time.LocalDate;
+import java.time.LocalTime;
 
 class DateClass {
     public static void main(String[] args) {
-        LocalDate today = LocalDate.now();
-        System.out.println(today);
+        LocalTime timenow = LocalTime.now();
+        System.out.println(timenow);
     }
 }
