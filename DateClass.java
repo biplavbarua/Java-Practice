@@ -1,7 +1,10 @@
 import java.util.Date;
+import java.util.Calendar;
 public class DateClass {
     public static void main(String[] args) {
-        Date date = new Date();
-        System.out.println(date);
+        Calendar calendar = Calendar.getInstance();
+        calendar.add(Calendar.DATE, 0);
+        Date futureDate = calendar.getTime();
+        System.out.println(futureDate);
     }
 }
